@@ -114,14 +114,9 @@ WSGI_APPLICATION = "horilla.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-if env("DATABASE_URL", default=None):
-    DATABASES = {
-        "default": env.db(),
-    }
-else:
-    DATABASES = {
+DATABASES = {
         "default": {
-            "ENGINE": env("DB_ENGINE", default="django.db.backends.sqlite3"),
+            "ENGINE": env("DB_ENGINE", default="django.db.backends.postgresql"),
             "NAME": env(
                 "DB_NAME",
                 default=os.path.join(
@@ -134,7 +129,7 @@ else:
             "HOST": env("DB_HOST", default=""),
             "PORT": env("DB_PORT", default=""),
         }
-    }
+    }    
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
