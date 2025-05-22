@@ -120,7 +120,7 @@ DATABASES = {
             "NAME": "test_horilla",
             "USER": "test_horilla_user",
             "PASSWORD": "cyJM6VCMRXmomVosvFCfYcvQc5QpDlz2",
-            "HOST": "dpg-d0c8suh5pdvs73dcm1eg-a",
+            "HOST": "dpg-d0c8suh5pdvs73dcm1eg-a.virginia-postgres.render.com",
             "PORT": "5432",
         }
     }    
