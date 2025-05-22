@@ -116,18 +116,12 @@ WSGI_APPLICATION = "horilla.wsgi.application"
 
 DATABASES = {
         "default": {
-            "ENGINE": env("DB_ENGINE", default="django.db.backends.postgresql"),
-            "NAME": env(
-                "DB_NAME",
-                default=os.path.join(
-                    BASE_DIR,
-                    "TestDB_Horilla.sqlite3",
-                ),
-            ),
-            "USER": env("DB_USER", default=""),
-            "PASSWORD": env("DB_PASSWORD", default=""),
-            "HOST": env("DB_HOST", default=""),
-            "PORT": env("DB_PORT", default=""),
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": "test_horilla",
+            "USER": "test_horilla_user",
+            "PASSWORD": "cyJM6VCMRXmomVosvFCfYcvQc5QpDlz2",
+            "HOST": "dpg-d0c8suh5pdvs73dcm1eg-a",
+            "PORT": "5432",
         }
     }    
 
